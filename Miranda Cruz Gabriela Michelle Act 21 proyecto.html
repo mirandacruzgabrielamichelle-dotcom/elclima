@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+<title>PROYECTO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Baloo 2', cursive;
+    }
+</style>
+
+<style>
+  body {
+  background-image: url("download.jfif"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #222;
+  
+  overflow-x: hidden;  /* oculta a los lados */
+  overflow-y: auto;    /* permite scroll vertical */
+}
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+/* Estilo general de las nubes */
+.contenedor img {
+  position: absolute;
+  height: 200px;
+  opacity: 0.9;
+}
+
+/* Nube 1: se mueve de izquierda a derecha y reaparece */
+.img1 {
+  top: 20px;
+  animation: nube1 25s linear infinite;
+}
+
+/* Nube 2: velocidad diferente + otra trayectoria */
+.img2 {
+  top: 50px;
+  animation: nube2 35s linear infinite;
+}
+
+/* Nube 3: más lenta y más arriba */
+.img3 {
+  top: 80px;
+  animation: nube3 45s linear infinite;
+}
+
+/* Movimiento continuo */
+@keyframes nube1 {
+  0%   { left: -300px; }
+  100% { left: 110%; }
+}
+
+@keyframes nube2 {
+  0%   { left: 110%; }
+  100% { left: -300px; }
+}
+
+@keyframes nube3 {
+  0%   { left: -300px; }
+  100% { left: 110%; }
+}
+
+.video-container {
+  position: relative;
+  width: 50%;              /* tamaño al 50% */
+  padding-bottom: 28.125%; /* 50% de ancho mantiene proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 20px auto;       /* auto = centra horizontalmente */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+
+<body>
+<header style="
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid #4CAF50;
+    z-index: 999;
+">
+
+    <a href="#inicio" style="
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #4CAF50;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+    ">Inicio</a>
+
+    <a href="#video" style="
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #FF9800;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+    ">Video</a>
+
+    <a href="#tabla" style="
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #9C27B0;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+    ">Tabla</a>
+	
+	<a href="#clima-tipos" style="
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #2196F3;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+    ">Tipos de Clima</a>
+	
+</header>
+
+<h1 id="inicio" align=center><font color=green>EL CLIMA</font></h1>
+
+<div class="contenedor">
+  <img src="5131a6bafeaaff55fd52f390b15fecf9-removebg-preview.png" class="img1">
+  <img src="a2965b0cf911922904358f3066a78289-removebg-preview.png" class="img2">
+  <img src="344a58b9c6b3f8c1ce360aede43b9afd-removebg-preview.png" class="img3">
+</div>
+<h1 align=center><FONT 
+COLOR=green>EL CLIMA</FONT></h1>
+
+<h1>El <u>clima</u> 
+es el <u>conjunto de condiciones atmosféricas que 
+caracterizan una región durante un largo período de tiempo.</u> 
+Estas condiciones incluyen factores como 
+
+<FONT COLOR=GREEN SIZE=+4>la temperatura, la humedad, 
+la presión atmosférica, el viento y las precipitaciones</font>. 
+Dependiendo de la combinación de estos elementos, el clima puede 
+clasificarse en diferentes tipos, como 
+tropical, seco, templado, frío o polar. 
+Cada uno influye directamente en la flora, la fauna y las 
+actividades humanas que se desarrollan en el lugar.</h1><p>
+
+<h1>El estudio del clima es fundamental para comprender cómo funciona 
+nuestro planeta y cómo los cambios naturales o provocados por el ser 
+humano pueden alterarlo. Fenómenos como el cambio climático, 
+resultado del aumento de gases de efecto invernadero, están 
+modificando los patrones climáticos a nivel global. Esto provoca 
+sequías más intensas, lluvias torrenciales y el derretimiento de los 
+glaciares, afectando tanto a los ecosistemas como a las comunidades 
+humanas.</h1><p>
+
+<HR COLOR=GREEN SIZE=10>
+
+<!-- VIDEO RESPONSIVE -->
+<div id="video" class="video-container">
+  <iframe 
+    src="El clima para niños - Los tipos de clima del mundo.mp4"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+	gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<h31>Además, el clima tiene una gran influencia en la vida cotidiana y en 
+la economía de los países. Determina las temporadas agrícolas, el 
+turismo y la disponibilidad de recursos naturales. Por ejemplo, las 
+zonas cálidas y húmedas suelen ser fértiles para la agricultura, 
+mientras que las regiones frías o áridas presentan mayores desafíos 
+para el desarrollo humano. Por ello, conocer y adaptarse al clima de 
+cada región es esencial para asegurar un futuro sostenible y 
+equilibrado.</h1><p>
+<HR COLOR=GREEN SIZE=10>
+<div id="tabla"><TABLE ALIGN=CENTER BGCOLOR=LIGHTYELLOW BORDER=12 BORDERCOLOR=lightblue width=90%>
+
+<TR><TD><b>CARACTERÍSTICAS</b></TD><TD><b>TROPICAL</b></TD>
+    <TD><b>DESÉRTICO</b></TD><TD><b>TEMPLADO</b></TD></TR>
+
+<TR><TD><a href=https://idearagon.aragon.es/lib/IDEAragon/examples/ACCA/temperatura.html#:~:text=Se%20llama%20temperatura%20a%20uno,en%20las%20distintas%20zonas%20clim%C3%A1ticas.>Temperatura</TD><TD>Alta y constante</TD>
+    <TD>Extrema (muy caliente de día y fría de noche)</TD>
+    <TD>Moderada durante el año</TD></TR>
+
+<TR><TD>Humedad</TD><TD>Muy alta</TD><TD>Muy baja</TD><TD>Media</TD></TR>
+
+<TR><TD>Precipitaciones</TD><TD>Frecuentes y abundantes</TD>
+    <TD>Escasas o casi nulas</TD><TD>Estacionales (primavera y otoño)</TD>
+</TR>
+
+<TR><TD>Vegetación</TD><TD>Selvas, bosques lluviosos</TD>
+    <TD>Cactus y matorrales</TD><TD>Bosques mixtos y praderas</TD></TR>
+
+<TR><TD>Fauna</TD>
+    <TD>Animales tropicales (monos, aves coloridas)</TD>
+    <TD>Especies adaptadas al calor (camellos, reptiles)</TD>
+    <TD>Animales de climas suaves (ciervos, zorros)</TD></TR>
+</TABLE><br></div>
+<HR COLOR=GREEN SIZE=10>
+
+<a href="https://climate.ec.europa.eu/climate-change/consequences-climate-change_es">
+<center><img align=center src=Diapositiva1.png></a><p></center>
+
+<HR COLOR=GREEN SIZE=10>
+
+<div id="clima-tipos">
+<center>
+<img src="Multicolor_Map_of_Mexico_with_States___Free_Vector_Maps-removebg-preview.png" 
+     usemap="#mapa1">
+</center>
+
+<map name="mapa1">
+
+    <!-- Estado 1 -->
+    <area 
+        alt="Estado 1" 
+        title="Estado 1" 
+        href="https://cambioclimatico.gob.mx/estadosymunicipios/Vulnerabilidad/V_28.html"
+        shape="poly"
+        coords="336,149,335,161,340,171,348,178,355,179,356,189,349,195,343,200,335,205,340,218,331,223,331,232,340,241,356,244,362,241,368,246,369,228,369,208,373,193,380,184"
+        target="_blank">
+
+    <!-- Estado 2 -->
+    <area 
+        alt="Estado 2" 
+        title="Estado 2"
+        href="https://cambioclimatico.gob.mx/estadosymunicipios/Vulnerabilidad/V_08.html"
+        shape="poly"
+        coords="222,68,193,69,191,77,179,79,177,85,185,93,185,112,185,135,174,136,183,152,186,161,195,163,198,177,206,177,214,186,228,165,239,170,253,172,257,165,269,167,264,143,276,121,258,112,252,103,248,91,232,79,227,74"
+        target="_blank">
+
+</map>
+<HR COLOR=GREEN SIZE=10>
+</div>
+
+<h2><FONT COLOR=GREEN>DEJANOS SABER TU OPINION SOBRE NOSOTROS</H2></FONT>
+<FORM ACTION="mailto:gabrielamichelle.miranda.cg080630@set.edu.mx" 
+METHOD="post" ENCTYPE="Text/Plain">
+Nombre: 
+<INPUT Type="Text" Names="Nombre" MaxLenght=15><P>
+Primer Apellido: 
+<INPUT TYpe="Text" Name="Primer Apllido" Maxenght=15>
+Segundo Apeillido:
+<INPUT Type="Text" Name="Segundo Apellido" MaxLenght=15><P>
+ 
+Sexo: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+Hombre: 
+<INPUT Type="Radio" Name="Sexo" Value="Hombre">
+Mujer:
+<INPUT Type="Radio" Name="Sexo" Value= "Mujer"><p> 
+Mi opinion respecto a la pagina es: <p>
+<textarea name="opinion" cols=30 rows=5>
+No olvides firmar tu comentario.
+</textarea><p>
+<INPUT Type="Submit" Value="Enviar datos"> 
+<INPUT Type="Reset" Value="Borrar datos">
+</FORM>
+</Body>
+</html>
